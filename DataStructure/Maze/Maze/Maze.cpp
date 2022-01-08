@@ -1,9 +1,16 @@
 ﻿#include "pch.h"
 #include <iostream>
 #include "ConsoleHelpers.h"
+#include "Board.h"
+#include "Player.h"
 
+Board board;
+Player player;
 int main()
 {
+    srand(static_cast<unsigned>(time(nullptr)));
+    board.Init(25,&player);
+    player.Init(&board);
     uint64 lastTick = 0;
     while (true)
     {
@@ -15,20 +22,9 @@ int main()
         //입력
 
         //로직
-        
+        player.Update(deltaTick);
         //랜더링
-        ConsoleHelpers::SetCursorPosition(0, 0);
-        ConsoleHelpers::ShowConsoleCursor(false);
-        ConsoleHelpers::SetCursorColor(ConsoleColor::RED);
-        const char* TILE = "■";
-        for (int32 y = 0; y < 25; y++)
-        {
-            for (int32 x = 0; x < 25; x++)
-            {
-                cout << TILE;
-            }
-            cout << endl;
-        }
+        board.Render();
 
     }
 }
