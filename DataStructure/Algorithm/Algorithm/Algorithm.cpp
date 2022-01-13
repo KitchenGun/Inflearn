@@ -76,6 +76,8 @@ private:
 };
 #endif // vector
 
+#ifdef list
+
 template <typename T>
 class Node
 {
@@ -187,7 +189,7 @@ private:
 
 		newNode->_next = before;
 		before->_prev = newNode;
-		
+
 		_size++;
 
 		return newNode;
@@ -200,11 +202,11 @@ private:
 
 		prevNode->_next = nextNode;
 		nextNode->_prev = prevNode;
-		
+
 		delete node;
 		_size--;
 		return nextNode;
- 	}
+	}
 	int size() { return _size; }
 public:
 	Node<T>* _head;
@@ -230,6 +232,9 @@ public:
 };
 
 
+#endif // list
+
+
 int main()
 {
 #ifdef vector
@@ -249,7 +254,7 @@ int main()
 	cout <<v.size() << " " << v.capacity() << endl;//size는 가지고 있는 데이터 //capacity는 벡터의 크기 용량
 
 #endif // vector
-	
+#ifdef list
 	List<int> li;
 	List<int>::iterator eraselt;
 
@@ -274,7 +279,5 @@ int main()
 	{
 		cout << ((it)._node->_data) << endl;
 	}
-
-
-
+#endif
 }
