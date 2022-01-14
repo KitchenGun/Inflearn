@@ -3,6 +3,7 @@
 #include <list>
 using namespace std;
 
+
 #ifdef vector
 template<typename T>
 class Vector
