@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
+//±íÀÌ¿ì¼±Å½»ö DFS
 struct Vertex
 {
 	int data;
