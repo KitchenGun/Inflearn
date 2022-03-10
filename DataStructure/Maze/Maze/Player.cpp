@@ -112,12 +112,15 @@ void Player::Bfs()
 		Pos {0,1}//right
 	};
 
+	//공간 확보
 	const int32 size =_board->GetSize();
 	vector<vector<bool>> discovered(size,vector<bool>(size,false));
+	//추적을 위한 변수
 	map<Pos,Pos> parent;
 	queue<Pos> q;
 	//시작위치 넣어주기
 	q.push(pos);
+
 	discovered[pos.y][pos.x] = true;
 	while (q.empty()==false)
 	{
