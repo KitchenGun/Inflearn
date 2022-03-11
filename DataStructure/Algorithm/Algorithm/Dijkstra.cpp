@@ -4,6 +4,8 @@
 
 using namespace std;
 
+//기존 Bfs와의 차이는 노드간의 이동 비용을 포함하여 계산하는 것이다.
+
 struct Vertex 
 {
 	int data;
