@@ -24,7 +24,7 @@ public:
 			//데이터 복사
 			for (int i = 0; i < _size; i++)
 			{
-				int index = (_front + i) % _container.size();
+				int index = ((int)_front + i) % _container.size();
 				newData[i] = _container[index];
 			}
 			//세팅
@@ -34,12 +34,12 @@ public:
 		}
 		//데이터 추가
 		_container[_back] = value;
-		_back= (_back+1)%_container.size();
+		_back= ((int)_back+1)%_container.size();
 		_size++;
 	}
 	void pop()
 	{
-		_front = (_front + 1) % _container.size();
+		_front = ((int)_front + 1) % _container.size();
 		_size--;
 	}
 	T& front()
