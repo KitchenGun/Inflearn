@@ -16,10 +16,15 @@ int main()
 	bst.PrintInOrder();
 
 
-	Node* next = bst.Next(bst.Search(bst.GetRoot(),50));
-	cout<<(next!=nullptr?next->key:0)<<endl;
+	//Node* next = bst.Next(bst.Search(bst.GetRoot(),50));
+	//cout<<(next!=nullptr?next->key:0)<<endl;
 
-	cout<<bst.Max(bst.GetRoot())->key<<endl;
+	//cout<<bst.Max(bst.GetRoot())->key<<endl;
+
+	bst.Delete(20);
+	bst.Delete(10);
+	bst.Delete(50);
+	bst.PrintInOrder();
 }
 
 void BinarySearchTree::Insert(int key)
@@ -49,6 +54,48 @@ void BinarySearchTree::Insert(int key)
 		parent->left = newNode;
 	else
 		parent->right = newNode;
+}
+
+void BinarySearchTree::Delete(int key)
+{
+	Node* deleteNode = Search(root,key);
+	Delete(deleteNode);
+
+}
+
+void BinarySearchTree::Delete(Node* node)
+{
+	if (node == nullptr)
+		return;
+
+	if (node->left == nullptr)
+		Replace(node, node->right);
+	else if (node->right == nullptr)
+		Replace(node, node->left);
+	else
+	{
+		// 다음 데이터 찾기
+		Node* next = Next(node);
+		node->key = next->key;
+		Delete(next);
+	}
+
+}
+
+void BinarySearchTree::Replace(Node* u, Node* v)
+{//u서브 트리를 v 서브트리로 교체
+
+	if(u->parent==nullptr)
+		root = v;
+	else if(u==u->parent->left)
+		u->parent->left = v;
+	else
+		u->parent->right = v;
+
+	if(v)
+		v->parent = u->parent; 
+
+	delete u;
 }
 
 Node* BinarySearchTree::Min(Node* node)

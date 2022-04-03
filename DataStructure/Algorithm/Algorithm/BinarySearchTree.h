@@ -21,6 +21,9 @@ class BinarySearchTree
 public:
 	void Insert(int key);
 	void Delete(int key);
+	void Delete(Node* node);
+
+	void Replace(Node* u,Node* v);
 
 	Node* Min(Node* node);
 	Node* Max(Node* node);
