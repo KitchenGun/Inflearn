@@ -62,7 +62,7 @@ void Dijkstra(int here)
 		here = bestIt->vertex;
 		//최적의 데이터를 지운다
 		discovered.erase(bestIt);
-		//방문? 더 짧은 경로를 뒤늦게 찾았다면 스킵
+		//방문? 더 짧은 경로가 아닌 경우 스킵
 		if (best[here] < cost)
 			continue;
 		//방문
