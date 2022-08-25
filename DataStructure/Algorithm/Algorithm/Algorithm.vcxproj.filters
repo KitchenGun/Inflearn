@@ -44,7 +44,10 @@
     <ClCompile Include="BinarySearchTree.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Test.cpp">
+    <ClCompile Include="PriorityQueue.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearchSTL.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
