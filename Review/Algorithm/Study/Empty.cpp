@@ -5,45 +5,30 @@ using namespace std;
 
 int main()
 {
+	vector<vector<int>> v;
+	v.resize(10);
+	for (int i = 0; i <= 9; i++)
+	{
+		v[i].resize(9);
+	}
+
+	int max =0;
 	int x=0,y=0;
-	cin >> x >> y;
-	vector<vector<int>> arr;
-	arr.resize(x);
-	cin.ignore();
-	for (int i = 0; i < x; i++)
+	for (int i = 0; i < 9; i++)
 	{
-		arr[i].resize(y);
-	}
-
-	for (int i = 0; i < x; i++)
-	{
-		for (int j = 0; j < y; j++)
+		for (int j = 0; j < 9; j++)
 		{
-			int temp;
-			cin >> temp;
-			arr[i][j] = temp;
+			cin>>v[i][j];
+			if (v[i][j]>max)
+			{
+				max = v[i][j];
+				x = i;
+				y = j;
+			}
 		}
 	}
 
-	for (int i = 0; i < x; i++)
-	{
-		for (int j = 0; j < y; j++)
-		{
-			int temp;
-			cin>>temp;
-			arr[i][j] += temp;
-		}
-	}
-
-
-	for (int i = 0; i < x; i++)
-	{
-		for (int j = 0; j < y; j++)
-		{
-			cout<<arr[i][j]<<" ";
-		}
-		cout << endl;
-	}
-
-	return 0;
+	cout<< max <<endl;
+	cout<<x+1 <<" " << y + 1 << endl;
+	
 }
