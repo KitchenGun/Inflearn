@@ -7,27 +7,27 @@ using namespace std;
 
 int main()
 {
-	vector<queue<char >> v(15);
-	
-
-	for (int i = 0; i < 5; i++)
+	int n;
+	vector<vector<bool>> v(100, vector<bool>(100));
+	cin >> n;
+	int result = 0;
+	for (int i = 0; i < n; i++)
 	{
-		string s;
-		cin>>s;
-		for (int j = 0; j < s.size(); j++)
+		int a=0, b=0;
+		
+		cin>>a >> b;
+		int amax=a+10,bmax=b+10;
+		for (int x = a; x < amax; x++)
 		{
-			v[j].push(s[j]);
+			for (int y = b; y < bmax; y++)
+			{
+				if (v[x][y] == 0)
+				{
+					v[x][y] = 1;
+					result++;
+				}
+			}
 		}
 	}
-
-
-	for (int i = 0; i < 15; i++)
-	{
-		while (!v[i].empty())
-		{
-			cout << v[i].front();
-			v[i].pop();
-		}
-	}
-	
+	cout<<result;
 }
