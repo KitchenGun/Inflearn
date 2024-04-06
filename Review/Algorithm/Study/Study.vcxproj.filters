@@ -19,10 +19,16 @@
     <Filter Include="소스 파일\Video">
       <UniqueIdentifier>{1f0baf0c-cde7-4ee8-9bca-c34ba8d6aff2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Back\sort">
+      <UniqueIdentifier>{8cdd0aa3-5724-4e9e-a867-2a77bcdfff71}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Empty.cpp">
       <Filter>소스 파일\Back</Filter>
+    </ClCompile>
+    <ClCompile Include="2750.cpp">
+      <Filter>소스 파일\Back\sort</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
