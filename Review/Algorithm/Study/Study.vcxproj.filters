@@ -31,4 +31,9 @@
       <Filter>소스 파일\Back\sort</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="2587.cpp">
+      <Filter>소스 파일\Back\sort</Filter>
+    </None>
+  </ItemGroup>
 </Project>
