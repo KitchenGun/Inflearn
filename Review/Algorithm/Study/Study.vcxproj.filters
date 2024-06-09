@@ -36,6 +36,9 @@
     <ClCompile Include="2751.cpp">
       <Filter>소스 파일\Back\sort</Filter>
     </ClCompile>
+    <ClCompile Include="10989.cpp">
+      <Filter>소스 파일\Back\sort</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="2587.cpp">
