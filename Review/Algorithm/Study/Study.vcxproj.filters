@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\Back\sort">
       <UniqueIdentifier>{8cdd0aa3-5724-4e9e-a867-2a77bcdfff71}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Programers">
+      <UniqueIdentifier>{aa7a8643-b731-4d1c-8702-bf45bbe3a352}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Empty.cpp">
@@ -38,6 +41,9 @@
     </ClCompile>
     <ClCompile Include="10989.cpp">
       <Filter>소스 파일\Back\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxOpen.cpp">
+      <Filter>소스 파일\Programers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
