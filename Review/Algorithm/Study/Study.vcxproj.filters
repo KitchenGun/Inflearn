@@ -25,6 +25,9 @@
     <Filter Include="소스 파일\Programers">
       <UniqueIdentifier>{aa7a8643-b731-4d1c-8702-bf45bbe3a352}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Back\Hard 1">
+      <UniqueIdentifier>{20a107b0-97ee-4d93-a96b-6ce49daa9eae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Empty.cpp">
@@ -44,6 +47,9 @@
     </ClCompile>
     <ClCompile Include="BoxOpen.cpp">
       <Filter>소스 파일\Programers</Filter>
+    </ClCompile>
+    <ClCompile Include="3003.cpp">
+      <Filter>소스 파일\Back\Hard 1</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
