@@ -57,6 +57,9 @@
     <ClCompile Include="10988.cpp">
       <Filter>소스 파일\Back\Hard 1</Filter>
     </ClCompile>
+    <ClCompile Include="25206.cpp">
+      <Filter>소스 파일\Back\Hard 1</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="2587.cpp">
