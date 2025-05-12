@@ -28,6 +28,9 @@
     <Filter Include="소스 파일\Back\Hard 1">
       <UniqueIdentifier>{20a107b0-97ee-4d93-a96b-6ce49daa9eae}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\BruteForce">
+      <UniqueIdentifier>{6e60d068-795b-425a-8b73-197c5e29a487}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Empty.cpp">
@@ -59,6 +62,9 @@
     </ClCompile>
     <ClCompile Include="25206.cpp">
       <Filter>소스 파일\Back\Hard 1</Filter>
+    </ClCompile>
+    <ClCompile Include="2798.cpp">
+      <Filter>소스 파일\BruteForce</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
