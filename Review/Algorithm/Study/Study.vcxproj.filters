@@ -66,6 +66,9 @@
     <ClCompile Include="2798.cpp">
       <Filter>소스 파일\BruteForce</Filter>
     </ClCompile>
+    <ClCompile Include="2231.cpp">
+      <Filter>소스 파일\BruteForce</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="2587.cpp">
